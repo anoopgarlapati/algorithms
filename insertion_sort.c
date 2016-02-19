@@ -8,16 +8,16 @@
 insert_sort(int arr[], int size)
 {
 	int i, j, key;
-	for(j=2; j<=size; j++)
+	for(i=1; i<size; i++)
 	{
-		key = arr[j];
-		i = j-1;
-		while(i>0 && arr[i]>key)
+		key = arr[i];
+		j=i-1;
+		while(j>=0 && arr[j]>key)
 		{
-			arr[i+1] = arr[i];
-			i--;
+			arr[j+1] = arr[j];
+			j--;
 		}
-		arr[i+1] = key;
+		arr[j+1] = key;
 	}
 }
 
