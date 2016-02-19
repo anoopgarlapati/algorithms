@@ -1,5 +1,5 @@
 /*
-	INSERTION SORT
+	SELECTION SORT
 	Author: Anoop Garlapati
 */
 
